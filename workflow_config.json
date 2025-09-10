@@ -1,0 +1,11 @@
+{
+  "workflows": [
+    {
+      "name": "Start InvestLease",
+      "commands": ["node workflow.js"],
+      "restartOn": {
+        "fileChange": ["server.cjs", "workflow.js", "start-pm2-server.sh", "ecosystem.config.cjs", "dist/**/*.js", "dist/**/*.html", "dist/**/*.css"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Краснодарский край",
+        "code": "RU-KDA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[38, 44], [41, 44], [41, 46], [38, 46], [38, 44]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ленинградская область",
+        "code": "RU-LEN"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[29, 59], [33, 59], [33, 61], [29, 61], [29, 59]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Нижегородская область",
+        "code": "RU-NIZ"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[43, 55], [46, 55], [46, 57], [43, 57], [43, 55]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Тамбовская область",
+        "code": "RU-TAM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[41, 52], [43, 52], [43, 53.5], [41, 53.5], [41, 52]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Самарская область",
+        "code": "RU-SAM"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[49, 52], [52, 52], [52, 54], [49, 54], [49, 52]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Тюменская область",
+        "code": "RU-TYU"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[65, 56], [70, 56], [70, 59], [65, 59], [65, 56]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ульяновская область",
+        "code": "RU-ULY"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[47, 53], [49, 53], [49, 55], [47, 55], [47, 53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Башкортостан",
+        "code": "RU-BA"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[54, 52], [58, 52], [58, 56], [54, 56], [54, 52]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Челябинская область",
+        "code": "RU-CHE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[58, 53], [62, 53], [62, 56], [58, 56], [58, 53]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Москва",
+        "code": "RU-MOS"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[36.5, 55.5], [38, 55.5], [38, 56.5], [36.5, 56.5], [36.5, 55.5]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Свердловская область",
+        "code": "RU-SVE"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[59, 56], [63, 56], [63, 59], [59, 59], [59, 56]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Иркутская область",
+        "code": "RU-IRK"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[100, 52], [108, 52], [108, 58], [100, 58], [100, 52]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Новосибирская область",
+        "code": "RU-NSK"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[78, 54], [84, 54], [84, 57], [78, 57], [78, 54]]]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Приморский край",
+        "code": "RU-PRI"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[[130, 42], [135, 42], [135, 48], [130, 48], [130, 42]]]
+      }
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+#!/bin/bash
+echo "Starting InvestLease application server..."
+exec node run_application.js

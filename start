@@ -1,0 +1,2 @@
+#!/bin/bash
+exec node run_application.js

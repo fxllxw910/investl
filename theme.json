@@ -1,0 +1,8 @@
+{
+  "variant": "tint",
+  "primary": "#b9a046",
+  "background": "#474a51",
+  "foreground": "#ffffff",
+  "appearance": "dark",
+  "radius": 0.6
+}

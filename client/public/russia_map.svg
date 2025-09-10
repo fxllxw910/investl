@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="600" viewBox="0 0 1200 600" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .region {
+      fill: rgba(30, 30, 40, 0.6);
+      stroke: rgba(255, 255, 255, 0.3);
+      stroke-width: 1;
+      transition: all 0.3s ease;
+    }
+    .region:hover {
+      fill: rgba(50, 50, 60, 0.8);
+      stroke: rgba(255, 255, 255, 0.5);
+      cursor: pointer;
+    }
+    .region.available {
+      fill: rgba(30, 120, 190, 0.8);
+    }
+    .region.available:hover {
+      fill: rgba(185, 160, 70, 0.9);
+      stroke: rgba(255, 255, 255, 0.8);
+      stroke-width: 1.5;
+    }
+    .region.selected {
+      fill: rgba(185, 160, 70, 0.9);
+      stroke: rgba(255, 255, 255, 0.8);
+      stroke-width: 1.5;
+    }
+    .region-label {
+      font-family: 'Arial', sans-serif;
+      font-size: 10px;
+      fill: #fff;
+      text-anchor: middle;
+      pointer-events: none;
+    }
+  </style>
+
+  <g id="russia-map">
+    <!-- Краснодарский край -->
+    <path id="RU-KDA" class="region" d="M225,300 L260,285 L280,290 L298,306 L290,325 L270,335 L240,335 L225,320 Z" />
+    
+    <!-- Ленинградская область -->
+    <path id="RU-LEN" class="region" d="M200,145 L230,135 L260,140 L270,160 L260,180 L230,185 L205,175 L195,160 Z" />
+    
+    <!-- Нижегородская область -->
+    <path id="RU-NIZ" class="region" d="M380,205 L410,195 L440,200 L445,220 L430,240 L395,245 L375,230 Z" />
+    
+    <!-- Тамбовская область -->
+    <path id="RU-TAM" class="region" d="M330,240 L355,235 L375,240 L380,260 L365,275 L340,275 L325,260 Z" />
+    
+    <!-- Самарская область -->
+    <path id="RU-SAM" class="region" d="M420,230 L445,225 L470,230 L475,250 L460,270 L430,275 L415,255 Z" />
+    
+    <!-- Тюменская область -->
+    <path id="RU-TYU" class="region" d="M580,170 L610,155 L640,165 L645,190 L630,210 L600,215 L580,195 Z" />
+    
+    <!-- Ульяновская область -->
+    <path id="RU-ULY" class="region" d="M390,230 L415,223 L435,230 L440,250 L425,265 L400,265 L385,250 Z" />
+    
+    <!-- Башкортостан -->
+    <path id="RU-BA" class="region" d="M470,210 L500,195 L525,205 L530,230 L510,250 L480,250 L465,230 Z" />
+    
+    <!-- Челябинская область -->
+    <path id="RU-CHE" class="region" d="M530,195 L560,180 L585,190 L590,215 L575,235 L540,240 L525,220 Z" />
+    
+    <!-- Остальные регионы России (фоновые) -->
+    <!-- Москва и область -->
+    <path class="region" d="M300,200 L320,190 L340,195 L345,215 L330,225 L310,220 L295,210 Z" />
+    
+    <!-- Северо-Запад -->
+    <path class="region" d="M160,120 L200,105 L230,110 L235,140 L215,155 L175,150 L155,135 Z" />
+    
+    <!-- Центральный регион -->
+    <path class="region" d="M270,215 L295,205 L315,210 L320,230 L305,245 L280,240 L265,225 Z" />
+    
+    <!-- Юг России -->
+    <path class="region" d="M250,260 L275,250 L295,255 L300,275 L285,290 L260,285 L245,270 Z" />
+    
+    <!-- Средняя Волга -->
+    <path class="region" d="M350,260 L375,250 L395,255 L400,275 L385,290 L360,285 L345,270 Z" />
+    
+    <!-- Урал -->
+    <path class="region" d="M490,255 L515,245 L535,250 L540,270 L525,285 L500,280 L485,265 Z" />
+    
+    <!-- Сибирь -->
+    <path class="region" d="M630,215 L660,205 L680,210 L685,230 L670,245 L640,240 L625,225 Z" />
+    
+    <!-- Западная Сибирь -->
+    <path class="region" d="M560,245 L585,235 L605,240 L610,260 L595,275 L570,270 L555,255 Z" />
+    
+    <!-- Восточная Сибирь -->
+    <path class="region" d="M700,210 L730,200 L750,205 L755,225 L740,240 L710,235 L695,220 Z" />
+    
+    <!-- Дальний Восток -->
+    <path class="region" d="M770,200 L800,190 L820,195 L825,215 L810,230 L780,225 L765,210 Z" />
+    
+    <!-- Крайний Север -->
+    <path class="region" d="M270,120 L300,110 L320,115 L325,135 L310,150 L280,145 L265,130 Z" />
+    
+    <!-- Камчатка и Сахалин -->
+    <path class="region" d="M840,200 L865,190 L885,195 L890,215 L875,230 L850,225 L835,210 Z" />
+    <path class="region" d="M810,240 L830,230 L845,235 L850,255 L835,270 L815,265 L805,250 Z" />
+  </g>
+</svg>

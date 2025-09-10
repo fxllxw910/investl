@@ -1,0 +1,175 @@
+.russia-map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.russia-map {
+  width: 100%;
+  max-height: 500px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.russia-map svg {
+  overflow: hidden !important;
+}
+
+.map-container {
+  max-width: 1182px;
+  height: 606px;
+  overflow: hidden !important;
+  margin: 0 auto;
+  position: relative;
+  border: 1px solid rgba(180, 160, 70, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(180, 160, 70, 0.1);
+}
+
+.map-point {
+  width: 8px;
+  height: 8px;
+  background-color: #b4a046;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 10px rgba(180, 160, 70, 0.8);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.map-point:hover, .map-point.active {
+  width: 12px;
+  height: 12px;
+  background-color: #c5b057;
+  box-shadow: 0 0 15px rgba(200, 180, 90, 0.9);
+}
+
+.map-point.active:before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: rgba(200, 180, 90, 0.3);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse-ring 1.5s infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+.city-label {
+  position: absolute;
+  background-color: rgba(15, 15, 20, 0.8);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  bottom: calc(100% + 15px);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+  z-index: 5;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateX(-50%) translateY(5px); }
+  to { opacity: 1; transform: translateX(-50%) translateY(0); }
+}
+
+.city-label:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: rgba(15, 15, 20, 0.8) transparent transparent transparent;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* Map point pulse animation */
+.map-point-pulse {
+  position: absolute;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 3s infinite;
+  background: radial-gradient(circle, rgba(185, 160, 70, 0.6) 0%, rgba(185, 160, 70, 0) 70%);
+  box-shadow: 0 0 20px rgba(185, 160, 70, 0.3);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
+@keyframes pulse {
+  0% {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
+  
+  50% {
+    width: 50px;
+    height: 50px;
+    opacity: 0.5;
+  }
+  
+  100% {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
+}
+
+/* Regions styling */
+path.region {
+  fill: #f5f5f5; /* Default light gray */
+  stroke: #e0e0e0;
+  stroke-width: 0.5;
+  transition: all 0.3s ease;
+}
+
+path.region.has-office {
+  fill: #e6dec8; /* Light gold/beige for regions with offices */
+}
+
+path.region:hover {
+  fill: #ece4c5; /* Lighter gold on hover */
+  filter: drop-shadow(0 0 5px rgba(180, 160, 70, 0.3));
+}
+
+path.region.active {
+  fill: #d0c28c; /* Darker gold for active region */
+  stroke: #b4a046;
+  stroke-width: 1;
+  filter: drop-shadow(0 0 8px rgba(180, 160, 70, 0.5));
+}
+
+/* Add styling for the Moscow region special highlight */
+path.region[data-region-id="MOW"] {
+  fill: #d4c692; /* Special highlight for Moscow */
+}
+
+path.region[data-region-id="MOW"]:hover {
+  fill: #c5b057; /* Brighter highlight on hover */
+}
