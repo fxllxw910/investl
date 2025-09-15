@@ -27,6 +27,13 @@ app.use(session({
   }
 }));
 
+app.get('*', (req, res) => {
+  if (!req.headers.host.startsWith('www.')) {
+    const newHost = 'www.' + req.headers.host;
+    return res.redirect(301, `https://${newHost}${req.url}`);
+  }
+});
+
 app.use(passport.initialize());
 app.use(passport.session());
 
